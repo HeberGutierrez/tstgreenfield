@@ -25,23 +25,24 @@
     "webpack": "^3.11.0"
   },
   "dependencies": {
-    "express": "*",
-    "jquery": "^3.3.1",
-    "passport-strategy": "^1.0.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
     "bcryptjs": "*",
     "body-parser": "*",
+    "bootstrap": "*",
     "connect-flash": "*",
     "cookie-parser": "^1.4.1",
+    "express": "*",
     "express-handlebars": "*",
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
+    "jquery": "^3.3.1",
     "mongodb": "*",
     "mongoose": "*",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "passport-strategy": "^1.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
