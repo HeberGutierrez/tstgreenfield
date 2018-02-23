@@ -31,15 +31,16 @@ CREATE TABLE registration (
 
 CREATE TABLE test (
   testID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  type char (25) NOT NULL,
   answer int(150) NOT NULL,
   FOREIGN KEY (studentID) REFERENCES registration(studentID)
+  FOREIGN KEY (type) REFERENCES answers(type)
 );
 
 CREATE TABLE answers (
   answersID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   right_answer char (50) NOT NULL,
-  FOREIGN KEY (testID) REFERENCES test(testID),
+  type char(25) NOT NULL,
+  FOREIGN KEY (testID) REFERENCES test(testID)
 );
 
 CREATE TABLE comparison (
