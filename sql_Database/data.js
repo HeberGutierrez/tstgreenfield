@@ -20,7 +20,7 @@ var insertData =function(email, password, name, last_name, nickname, phone, birt
 })
 };
 
-var insertAnswerMind =function(answer, type, callback){
+var insertAnswerMind =function(answer, callback){
   connect.query('INSERT INTO test (answer, type) VALUES (?, mind)', [answer], (err, results)=>{
     if(err){
       console.log("insert answer error in mind assesment");
@@ -32,7 +32,7 @@ var insertAnswerMind =function(answer, type, callback){
   })
 };
 
-var insertAnswerAnalytical = function(answer, trype, callback){
+var insertAnswerAnalytical = function(answer, callback){
   connect.query('INSERT INTO test (answer, type) VALUES (?, analytical)',
 [answer], (err, results)=>{
   if(err){
@@ -44,7 +44,7 @@ var insertAnswerAnalytical = function(answer, trype, callback){
   }
 })
 };
-var insertAnswerReading = function(answer, type, callback){
+var insertAnswerReading = function(answer, callback){
   connect.query('INSERT INTO test (answer, type) VALUES (?, reading)',
 [answer], (err, results)=>{
   if(err){
@@ -57,7 +57,7 @@ var insertAnswerReading = function(answer, type, callback){
 })
 };
 
-var insertAnswerComprehension = function(answer, type, callback){
+var insertAnswerComprehension = function(answer, callback){
   connect.query('INSERT INTO test (answer, type) VALUES (?, comprehension)',
 [answer], (err, results)=>{
   if(err){
