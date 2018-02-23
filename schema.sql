@@ -56,4 +56,4 @@ INSERT INTO test (type, answer) VALUES("analitical", "a");
 INSERT INTO test (type, answer) VALUES("mind", "1");
 INSERT INTO test (type, answer) VALUES("reading", "b");
 INSERT INTO test (type, answer) VALUES("comprehension", "c");
-INSERT INTO answers (right_answer, testID) VALUES("B and D", 1);
+INSERT INTO answers (right_answer, testID) VALUES("B and D", 2);
